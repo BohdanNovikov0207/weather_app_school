@@ -1,0 +1,44 @@
+{
+    "coord": {
+        "lon": 27.4211,
+        "lat": 59.3592
+    },
+    "weather": [
+        {
+            "id": 802,
+            "main": "Clouds",
+            "description": "scattered clouds",
+            "icon": "03d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 2.21,
+        "feels_like": -3.37,
+        "temp_min": 2.21,
+        "temp_max": 2.21,
+        "pressure": 1029,
+        "humidity": 58,
+        "sea_level": 1029,
+        "grnd_level": 1024
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 7.76,
+        "deg": 45,
+        "gust": 9.57
+    },
+    "clouds": {
+        "all": 43
+    },
+    "dt": 1775724374,
+    "sys": {
+        "country": "EE",
+        "sunrise": 1775704408,
+        "sunset": 1775754601
+    },
+    "timezone": 10800,
+    "id": 591893,
+    "name": "Jõhvi",
+    "cod": 200
+}
