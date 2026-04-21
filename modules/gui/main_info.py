@@ -27,17 +27,17 @@ class Info(ctk.CTkFrame):
             text_color = '#FFFFFF'
         )
         # we used place to arrange what we have created, it arrange using exact position of x and y
-        self.current_position.place(x = 330, y = 100)
+        self.current_position.place(x = 350, y = 100)
         city_name = read("config.json")["list_city"][0]
         get_info_weather(city_name, "weather_data.json", False)
+        data = read("weather_data.json")
         self.NAME = ctk.CTkLabel(
             self, 
-            text = city_name, 
+            text = data["name"], 
             text_color = "white",
             font = ('Roboto Slab', 25, 'bold'),
         )
-        self.NAME.place(x = 420, y = 145)
-        data = read("weather_data.json")
+        self.NAME.place(x = 440, y = 145)
         temp = round(data["main"]["temp"])
         self.TEMP = ctk.CTkLabel(
             self, 
@@ -45,7 +45,7 @@ class Info(ctk.CTkFrame):
             text_color = "white",
             font = ('Roboto Slab', 70, 'bold'),
         )
-        self.TEMP.place(x = 420, y = 180)
+        self.TEMP.place(x = 435, y = 180)
         description = data["weather"][0]["description"].capitalize()
         if description == "Clear sky":
             description = "Selge taev"
@@ -83,7 +83,7 @@ class Info(ctk.CTkFrame):
             text_color = "white",
             font = ('Roboto Slab', 25, 'bold'),
         )
-        self.DESCRIPTION.place(x = 350, y = 300)
+        self.DESCRIPTION.place(x = 410, y = 300)
         
 # в чем суть 89 строки и где этот обьект используется потом, каким образом он выводится в окно приложения
 info = Info(child_master = app)

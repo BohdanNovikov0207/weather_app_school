@@ -1,44 +1,46 @@
 {
     "coord": {
-        "lon": 27.4211,
-        "lat": 59.3592
+        "lon": 26.0473,
+        "lat": 57.7778
     },
     "weather": [
         {
-            "id": 802,
-            "main": "Clouds",
-            "description": "scattered clouds",
-            "icon": "03d"
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 8.5,
-        "feels_like": 7.41,
-        "temp_min": 8.5,
-        "temp_max": 8.5,
-        "pressure": 1034,
-        "humidity": 66,
-        "sea_level": 1034,
-        "grnd_level": 1028
+        "temp": 13.89,
+        "feels_like": 12.17,
+        "temp_min": 13.89,
+        "temp_max": 13.89,
+        "pressure": 1021,
+        "humidity": 32,
+        "sea_level": 1021,
+        "grnd_level": 1013
     },
     "visibility": 10000,
     "wind": {
-        "speed": 2.04,
-        "deg": 89,
-        "gust": 2.8
+        "speed": 2.24,
+        "deg": 96,
+        "gust": 4.02
     },
     "clouds": {
-        "all": 47
+        "all": 8
     },
-    "dt": 1776151406,
+    "dt": 1776768695,
     "sys": {
+        "type": 2,
+        "id": 2039919,
         "country": "EE",
-        "sunrise": 1776135537,
-        "sunset": 1776187315
+        "sunrise": 1776739806,
+        "sunset": 1776793119
     },
     "timezone": 10800,
-    "id": 591893,
-    "name": "Jõhvi",
+    "id": 587876,
+    "name": "Valga",
     "cod": 200
 }
