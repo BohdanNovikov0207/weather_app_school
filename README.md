@@ -9,10 +9,10 @@ Open your git bash terminal in the folder, where you want to install project in
 **Step 2**
 Enter into your terminal next line: "git clone https://github.com/BohdanNovikov0207/weather_app_ivkhk.git"
 
-**Step 4**
+**Step 3**
 Move to the folder where the installed project is (cd weather_app_ivkhk), setup virtual environment (python -m venv venv)
 
-**Step 5**
+**Step 4**
 Activate your environment, for this type "source venv/Scripts/activate" if you are on Windows and "source venv/bin/activate" if you are on linux.
 Download libs listed in requirements.txt file via pip. Type in terminal "pip install -r requirements.txt"
 
