@@ -4,7 +4,7 @@ from ..read_json import *
 from .main_screen import *
 from ..weather_data import *
 
-# PIL (Pillow) - модуль для роботы с картинками
+# PIL (Pillow) - Moodul piltidega töötamiseks
 
 class WeatherImage(ctk.CTkLabel):
     def __init__(self, width: int, height: int, master: ctk.CTk | ctk.CTkFrame, name_json: str, count: int = None):
@@ -24,7 +24,7 @@ class WeatherImage(ctk.CTkLabel):
             data_weather = data_weather["list"][self.count]
         name_image = data_weather["weather"][0]["icon"]
         path_image = os.path.abspath(__file__ + f'/../../../images/{name_image}.png')
-        # PIL.Image.open - открывает/создает картинку 
+        # PIL.Image.open - avab/loob pildi
         image = PIL.Image.open(fp = path_image)
         return ctk.CTkImage(
             image,
@@ -35,3 +35,4 @@ first_city = read("config.json")["list_city"][0]
 get_info_weather(first_city, "weather_data.json", False)
 main_image = WeatherImage(170, 160, app, 'weather_data.json')
 main_image.place(x = 380, y = 170)
+# Ilmainfo piltide kuvamise parameetrid

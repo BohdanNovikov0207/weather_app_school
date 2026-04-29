@@ -1,12 +1,15 @@
+# Parema GUI jaoks on vaja importida customtkinter kasutajaliidese teekina, samuti impordime funktsiooni read_json-ist
 import customtkinter as ctk
 from .side_bar import menu
 from ..read_json import *
 from ..weather_data import get_info_weather
+# Impordime funktsioon get_info_weather et saama infot ilmast
 from datetime import datetime, timezone, timedelta
-
+# Impordime modulist datetime ajavöönd, kuupäev ja aeg, ja nendevahelise erinevust
 list_city = read('config.json')["list_city"]
-
+# Muutuja saab teavet "config.json"-ist ja "list_city"
 class CityFrame(ctk.CTkFrame):
+# Määrame linnanimide kuvamise kujundusparameetrid
     def __init__(self, city_name: str, master_ch: ctk.CTkScrollableFrame):
         ctk.CTkFrame.__init__(
             self,
@@ -18,17 +21,18 @@ class CityFrame(ctk.CTkFrame):
             corner_radius = 20,
             fg_color = "#096C82"
         ) 
+        
         self.pack(pady = 20)
         get_info_weather(city_name, "weather_data.json", False)
         self.DATA = read("weather_data.json")
         temp = round(self.DATA['main']['temp'])
         temp_min = round(self.DATA['main']['temp_min'])
         temp_max = round(self.DATA['main']['temp_max'])
-
+        # Ilmainfo kuvamine, nagu näiteks: info linnade kaupa, min temperatuur/max temperatuur, teatud ajavahemiku jooksul, ning samuti väärtuste ümardamine.
         timez = timedelta(seconds=self.DATA['timezone'])
         # 
         time = (datetime.now(timezone.utc) + timez).strftime("%H:%M")
-        # 
+        # Ajavööndite infot kuvamine
         
         # Перевод с англ на эст, API не поддерживает эст язык по умолчанию
         description = self.DATA['weather'][0]['description'].capitalize()

@@ -1,7 +1,7 @@
 import customtkinter as ctk
 from .main_screen import app
 
-
+#ilmaennutuse kujundus
 class FrameForecast(ctk.CTkScrollableFrame):
     def __init__(self, master: ctk.CTk):
         ctk.CTkScrollableFrame.__init__(

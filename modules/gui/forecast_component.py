@@ -3,6 +3,7 @@ from .forecast_frame import *
 from ..weather_data import get_info_weather
 from ..read_json import read
 from .image import *
+#Importeerib raamatukogu vidinate disaini jaoks
 
 get_info_weather("Johvi", "forecast.json", True)
 list_weather = read("forecast.json")["list"]
