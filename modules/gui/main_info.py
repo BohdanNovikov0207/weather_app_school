@@ -9,7 +9,7 @@ class Info(ctk.CTkFrame):
     # we created parameter to use it further
     def __init__(self, child_master: ctk.CTk):
         ctk.CTkFrame.__init__(
-            # 
+            # we created some other parameters and gave them values
             self,
             master = child_master,
             width = 925,
@@ -19,14 +19,14 @@ class Info(ctk.CTkFrame):
         # we used grid to arrange what we have created, it arrange using rows and columns
         self.grid(row = 0, column = 1)
         
-        # we used CTkLabel to create text and make it looks way we need
+        # we used CTkLabel to give value to some parameters and make text looks way we need
         self.current_position = ctk.CTkLabel(
             master = self,
             text = 'Praegune linn',
             font = ('Roboto Slab', 35, 'bold'),
             text_color = '#FFFFFF'
         )
-        # we used place to arrange what we have created, it arrange using exact position of x and y
+        # we used place to arrange what we have created, it arrange using exact position of x and y axis
         self.current_position.place(x = 350, y = 100)
         city_name = read("config.json")["list_city"][0]
         get_info_weather(city_name, "weather_data.json", False)
