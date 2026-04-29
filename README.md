@@ -1,25 +1,20 @@
+Requirements for this project:
+1. Installed [Git](https://git-scm.com/install/)
+2. Installed [Python](https://www.python.org/downloads/)
+
+
 **Step 1**
-First of all you need to download [Git](https://git-scm.com/install/)
+Open your git bash terminal in the folder, where you want to install project in
 
 **Step 2**
-Then you need to download [Python](https://www.python.org/downloads/)
+Enter into your terminal next line: "git clone https://github.com/BohdanNovikov0207/weather_app_ivkhk.git"
 
 **Step 3**
-You need to go back to the project page, then click to "Code" button and then copy the link.
+Move to the folder where the installed project is (cd weather_app_ivkhk), setup virtual environment (python -m venv venv)
 
 **Step 4**
-Then you need to open terminal and write command `git clone (link)`
-In place of (link) you need to paste copied link
+Activate your environment, for this type "source venv/Scripts/activate" if you are on Windows and "source venv/bin/activate" if you are on linux.
+Download libs listed in requirements.txt file via pip. Type in terminal "pip install -r requirements.txt"
 
 **Step 5**
-You need to open virtual environment.
-First open terminal and write command `python -m venv venv`
-
-
-
-
-**Step **
-Then you need to actiate app using command `python main.py`
-
-**Step **
-Enjoy
+Launch main.py file via terminal or IDE. For the first option just simply type "python main.py"

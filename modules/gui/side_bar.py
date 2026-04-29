@@ -3,6 +3,7 @@ from .main_screen import app
 
 # master - параметр, который отвечает за отцовский элемент (тот, к чему крепится)
 # CTkScrollableFrame - создает элемент с прокруткой
+# 
 class VerticalMenu(ctk.CTkScrollableFrame):
     def __init__ (self, master_ch: ctk.CTk, width_ch: int, height_ch: int, **kwargs):
         ctk.CTkScrollableFrame.__init__(
